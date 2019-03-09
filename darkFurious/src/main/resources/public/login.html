@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录页面</title>
+
+<!-- 引入jquery -->
+<script type="text/javascript" src="webjars/jquery/3.0.0/jquery.min.js"></script>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#login").bind("click",function() {
+			$.ajax({
+				url:"login/checkAccount",
+				data:{
+					"username": $("#username").val(),
+					"password": $("#password").val()
+				},
+				success:function(data) {
+					if(data == "Y") {
+						$("#prompt").text("登录成功");
+						$("#prompt").css({"display": "block","color":"green","height":"24px"});
+					} else {
+						$("#prompt").text("用户名或密码错误!");
+						$("#prompt").css({"display": "block","color":"red","height":"24px"});
+					}
+				},
+				error: function(){
+					alert("登录异常!");
+				}
+			});
+		})
+	});
+</script>
+</head>
+<body>
+	用户名：<input id="username" type="text"/><br/>
+	用户名：<input id="password" type="password"/><br/>
+	<span id="prompt"></span>
+	<input id="login" type="button" value="登录"/>
+</body>
+</html>

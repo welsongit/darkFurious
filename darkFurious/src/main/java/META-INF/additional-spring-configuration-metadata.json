@@ -1,0 +1,62 @@
+{"properties": [
+  {
+    "name": "spring.druid.initialSize",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.druid.initialSize'"
+  },
+  {
+    "name": "spring.druid.minIdle",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.druid.minIdle'"
+  },
+  {
+    "name": "spring.druid.maxActive",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.druid.maxActive'"
+  },
+  {
+    "name": "spring.druid.timeBetweenEvictionRunsMillis",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.druid.timeBetweenEvictionRunsMillis'"
+  },
+  {
+    "name": "spring.druid.minEvictableIdleTimeMillis",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.druid.minEvictableIdleTimeMillis'"
+  },
+  {
+    "name": "spring.druid.validationQuery",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.druid.validationQuery'"
+  },
+  {
+    "name": "spring.druid.testWhileIdle",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.druid.testWhileIdle'"
+  },
+  {
+    "name": "spring.druid.poolPreparedStatements",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.druid.poolPreparedStatements'"
+  },
+  {
+    "name": "spring.druid.initialSize",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.druid.initialSize'"
+  },
+  {
+    "name": "spring.druid.initialSize",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.druid.initialSize'"
+  },
+  {
+    "name": "spring.druid.maxWait",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.druid.maxWait'"
+  },
+  {
+    "name": "spring.druid.initialSize",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.druid.initialSize'"
+  }
+]}
