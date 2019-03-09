@@ -51,15 +51,28 @@
             <scope>provided</scope>
         </dependency>
         
+        <!--bootstrap-->
+		 <!-- 在springboot中集成bootstrap https://blog.csdn.net/sinat_24048051/article/details/77531834-->
+		 <dependency>
+		     <groupId>org.webjars</groupId>
+		     <artifactId>bootstrap</artifactId>
+		     <version>3.3.5</version>
+		 </dependency>
         <dependency>
 		    <groupId>org.webjars</groupId>
 		    <artifactId>jquery</artifactId>
-		    <version>3.0.0</version>
+		    <version>3.1.1</version>
 		</dependency>
 		
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		
+		<!--解除HTML严格语法-->
+		<dependency>
+		    <groupId>net.sourceforge.nekohtml</groupId>
+		    <artifactId>nekohtml</artifactId>
 		</dependency>
 	</dependencies>
 
