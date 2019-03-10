@@ -3,11 +3,11 @@
 }
 img {
   width: 100%;
-  height: 100%;
+  height: 50vh;
 }
 .row.align-items-center.justify-content-center.row-style{
 	width: 55vh;
-	height: 56vh;
+	height: 50vh;
 	border: 1px solid grey;
 	border-radius: 5px;
 }
