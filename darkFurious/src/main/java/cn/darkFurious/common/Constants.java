@@ -1,4 +1,4 @@
-package cn.wechatapp.darkFurious.common;
+package cn.darkFurious.common;
 
 /**
  * 常量类

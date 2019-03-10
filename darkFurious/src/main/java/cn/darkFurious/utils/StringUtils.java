@@ -1,4 +1,4 @@
-package cn.wechatapp.darkFurious.utils;
+package cn.darkFurious.utils;
 
 /**
  * String工具类

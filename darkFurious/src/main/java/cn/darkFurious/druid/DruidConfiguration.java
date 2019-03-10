@@ -1,4 +1,4 @@
-package cn.wechatapp.darkFurious.druid;
+package cn.darkFurious.druid;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;

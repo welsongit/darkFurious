@@ -1,11 +1,11 @@
-package cn.wechatapp.darkFurious.service.impl;
+package cn.darkFurious.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import cn.wechatapp.darkFurious.dao.LoginDao;
-import cn.wechatapp.darkFurious.entity.Account;
-import cn.wechatapp.darkFurious.service.LoginService;
+import cn.darkFurious.entity.Account;
+import cn.darkFurious.mapper.LoginMapper;
+import cn.darkFurious.service.LoginService;
 
 /**
  * 登录业务逻辑层实现类
@@ -16,11 +16,11 @@ import cn.wechatapp.darkFurious.service.LoginService;
 public class LoginServiceImpl implements LoginService {
 	
 	@Autowired
-	private LoginDao loginDao;
+	private LoginMapper loginMapper;
 	
 	@Override
 	public boolean checkAccount(Account account) {
-		return "Y".equals(loginDao.checkAccount(account)) ? true : false ;
+		return "Y".equals(loginMapper.checkAccount(account)) ? true : false ;
 	}
 
 }

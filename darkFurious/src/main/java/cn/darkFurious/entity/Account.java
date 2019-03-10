@@ -1,4 +1,4 @@
-package cn.wechatapp.darkFurious.entity;
+package cn.darkFurious.entity;
 
 import lombok.Data;
 

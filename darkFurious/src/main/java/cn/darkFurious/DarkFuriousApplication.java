@@ -1,4 +1,4 @@
-package cn.wechatapp.darkFurious;
+package cn.darkFurious;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -7,7 +7,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
-@MapperScan(value="cn.wechatapp.darkFurious.dao")
+@MapperScan(value="cn.darkFurious.mapper")
 public class DarkFuriousApplication {
 
 	public static void main(String[] args) {

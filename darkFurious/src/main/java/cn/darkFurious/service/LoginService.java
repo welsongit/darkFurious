@@ -1,6 +1,6 @@
-package cn.wechatapp.darkFurious.service;
+package cn.darkFurious.service;
 
-import cn.wechatapp.darkFurious.entity.Account;
+import cn.darkFurious.entity.Account;
 
 /**
  * 登录业务逻辑层接口

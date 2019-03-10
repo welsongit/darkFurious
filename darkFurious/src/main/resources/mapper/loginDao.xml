@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="cn.wechatapp.darkFurious.dao.LoginDao">
+<mapper namespace="cn.darkFurious.mapper.LoginMapper">
 
     <!-- 查询登录账号密码是否存在 -->
-	<select id="checkAccount" parameterType="cn.wechatapp.darkFurious.entity.Account" resultType="java.lang.String">
+	<select id="checkAccount" parameterType="cn.darkFurious.entity.Account" resultType="java.lang.String">
 		select ifnull(max('Y'),'N')
 		  from df_account_t 
 		 where username = #{account.username,jdbcType = VARCHAR}

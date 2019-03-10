@@ -1,12 +1,12 @@
-package cn.wechatapp.darkFurious.controller;
+package cn.darkFurious.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import cn.wechatapp.darkFurious.entity.Account;
-import cn.wechatapp.darkFurious.service.LoginService;
+import cn.darkFurious.entity.Account;
+import cn.darkFurious.service.LoginService;
 import lombok.extern.slf4j.Slf4j;
 
 @Controller
