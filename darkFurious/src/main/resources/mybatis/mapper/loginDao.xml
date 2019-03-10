@@ -6,7 +6,7 @@
     <!-- 查询登录账号密码是否存在 -->
 	<select id="checkAccount" parameterType="cn.darkFurious.entity.Account" resultType="java.lang.String">
 		select ifnull(max('Y'),'N')
-		  from df_account_t 
+		  from DF_ACCOUNT_T 
 		 where username = #{account.username,jdbcType = VARCHAR}
 		   and password = #{account.password,jdbcType = VARCHAR}
 	</select>
