@@ -1,0 +1,19 @@
+.row{
+  height: 80vh;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.row.align-items-center.justify-content-center.row-style{
+	width: 55vh;
+	height: 56vh;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+span{
+	width: 20%;
+}
+.col-lg-10{
+	margin-top: 5vh;
+}

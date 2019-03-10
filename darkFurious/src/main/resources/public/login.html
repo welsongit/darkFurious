@@ -1,46 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>登录页面</title>
-
-<!-- 引入jquery -->
-<script type="text/javascript" src="webjars/jquery/3.1.1/jquery.min.js"></script>
-<script src="webjars/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="webjars/bootstrap/3.3.5/css/bootstrap.min.css" />
-<meta charset="UTF-8">
-<style type="text/css">
-</style>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$("#login").bind("click",function() {
-			$.ajax({
-				url:"login/checkAccount",
-				data:{
-					"username": $("#username").val(),
-					"password": $("#password").val()
-				},
-				success:function(data) {
-					if(data == "Y") {
-						$("#prompt").text("登录成功");
-						$("#prompt").css({"display": "block","color":"green","height":"24px"});
-					} else {
-						$("#prompt").text("用户名或密码错误!");
-						$("#prompt").css({"display": "block","color":"red","height":"24px"});
-					}
-				},
-				error: function(){
-					alert("登录异常!");
-				}
-			});
-		})
-	});
-</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<link rel="stylesheet"
+	href="https://unpkg.com/bootstrap@4.0.0-beta.2/dist/css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript"
+	src="https://unpkg.com/jquery@3.2.1/dist/jquery.js" charset="utf-8"></script>
+<script type="text/javascript"
+	src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+	charset="utf-8"></script>
+<script type="text/javascript"
+	src="https://unpkg.com/bootstrap@4.0.0-beta.2/dist/js/bootstrap.js"
+	charset="utf-8"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-	用户名：<input id="username" type="text"/><br/>
-	用户名：<input id="password" type="password"/><br/>
-	<span id="prompt"></span>
-	<input id="login" type="button" value="登录"/>
+	<div class="container container-style">
+		<div class="row align-items-center">
+			<div class="col-lg-8">
+				<div class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="d-block w-100" src="images/1.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="images/2.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="images/3.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="images/4.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="images/5.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="row align-items-center justify-content-center row-style">
+					<div class="col-md-12">
+						<h4>账号密码登录</h4>
+					</div>
+					<div class="col-md-12">
+						<div class="input-group">
+							<!-- <label for="username">用户名</label> -->
+							<span class="input-group-addon">用户名</span> <input id="username"
+								type="text" class="form-control form-control-sm"
+								placeholder="请输入用户名..." />
+							<!-- <small class="form-text text-muted">请输入用户名</small> -->
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="input-group">
+							<!-- <label for="password">密码</label> -->
+							<span class="input-group-addon">密码</span> <input id="password"
+								type="password" class="form-control form-control-sm"
+								placeholder="请输入密码..." />
+							<!-- <small class="form-text text-muted">请输入密码</small> -->
+						</div>
+					</div>
+					<div class="col-md-12">
+						<button id="login" class="btn btn-outline-danger btn-lg btn-block">登录</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
